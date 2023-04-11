@@ -11,7 +11,7 @@ int main(){
     for(i=1;i<=10;i++){
         if(l[x][y-1]==2){
             l[x-1][y-1]=9;
-            l[x-1][y]=9;
+            l[x][y-1]=9;
             break;
         }
         else if(l[x-1][y]==2){
@@ -42,7 +42,8 @@ int main(){
     }
     for(i=0;i<10;i++){
         for(j=0;j<10;j++){
-            scanf("%d",&l[i][j]);
+            printf("%d ",l[i][j]);
         }
+        printf("\n");
     }
 }
